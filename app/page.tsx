@@ -38,7 +38,7 @@ export default function Home() {
 
           <div className="p-6 rounded-xl bg-white dark:bg-zinc-900 shadow text-center">
             <Image
-              src="/chicken-adobo.jpg"
+              src="/Chicken Adobo.png"
               alt="Chicken Adobo"
               width={300}
               height={200}
@@ -53,10 +53,11 @@ export default function Home() {
 
           <div className="p-6 rounded-xl bg-white dark:bg-zinc-900 shadow text-center">
             <Image
-              src="/pork-adobo.jpg"
+              src="/Pork Adobo.png"
               alt="Pork Adobo"
               width={300}
               height={200}
+              loading="eager"
               className="rounded-lg mx-auto mb-4"
             />
             <h3 className="text-xl font-semibold mb-2">Pork Adobo</h3>
@@ -67,7 +68,7 @@ export default function Home() {
 
           <div className="p-6 rounded-xl bg-white dark:bg-zinc-900 shadow text-center">
             <Image
-              src="/adobo-bowl.jpg"
+              src="/Adobo Rice Bowl.png"
               alt="Adobo Rice Bowl"
               width={300}
               height={200}

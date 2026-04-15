@@ -27,7 +27,19 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <nav className="w-full bg-white dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-800 px-6 py-4">
+          <div className="max-w-6xl mx-auto flex items-center justify-between">
+            <a href="/" className="text-lg font-bold text-zinc-900 dark:text-zinc-100">🍗 Adobohan</a>
+            <div className="flex items-center gap-6 text-sm font-medium">
+              <a href="/" className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition">Home</a>
+              <a href="/contact" className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition">Contact</a>
+              <a href="/login" className="px-4 py-2 rounded-full bg-black text-white dark:bg-white dark:text-black hover:opacity-80 transition">Login</a>
+            </div>
+          </div>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
